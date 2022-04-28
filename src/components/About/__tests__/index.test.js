@@ -5,10 +5,17 @@ import About from '..';
 
 afterEach(cleanup);
 
+const portrait = { name: "portraits", description: "Portraits of people in my life" };
+
 describe('About component', () => {
     //renders About Test
     it('renders', () => {
         render(<About />);
+        // render(<Nav
+        //     categories={categories}
+        //     setCurrentCategory={mockSetCurrentCategory}
+        //     currentCategory={mockCurrentCategory}
+        //   />);
     });
 
     it('matches snapshot DOM node structure', () => {
